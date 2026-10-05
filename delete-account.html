@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Mirah — Delete your account</title>
+<meta name="description" content="How to delete your Mirah account and the data stored with it, in the app or on the web, and what happens to your subscription.">
+<style>
+  :root {
+    --rose: #b14d6a;
+    --saffron: #e0a23c;
+    --ink: #2a2421;
+    --muted: #6b615a;
+    --cream: #fbf7f2;
+    --card: #ffffff;
+    --line: #ece3d8;
+    --danger: #a3283a;
+    --field-line: #8a7f77;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--rose); font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; font-size: 12px; margin-bottom: 14px;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--saffron); }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 30px; }
+  h2 { font-size: 20px; margin: 34px 0 8px; letter-spacing: -.01em; }
+  h3 { font-size: 18px; line-height: 1.3; margin: 0 0 8px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--rose); overflow-wrap: anywhere; }
+  ul, ol { padding-left: 22px; margin: 0 0 14px; }
+  li { margin: 0 0 8px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 22px; margin: 0 0 12px;
+  }
+  .card > :last-child { margin-bottom: 0; }
+  .email { font-size: 20px; font-weight: 700; }
+  .quiet { color: var(--muted); font-size: 15px; }
+  .footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  .footer a { color: var(--muted); }
+
+  [hidden] { display: none !important; }
+  label { display: block; font-weight: 600; margin: 0 0 6px; }
+  input[type="email"], input[type="password"], input[type="text"] {
+    display: block; width: 100%; min-height: 48px; padding: 10px 14px; margin: 0 0 16px;
+    font: inherit; color: var(--ink); background: #fff;
+    border: 1px solid var(--field-line); border-radius: 12px;
+  }
+  button {
+    display: block; width: 100%; min-height: 48px; padding: 12px 18px; margin: 0 0 12px;
+    font: inherit; font-weight: 700; color: var(--ink); background: #fff;
+    border: 1px solid var(--field-line); border-radius: 12px; cursor: pointer;
+  }
+  button.primary { color: #fff; background: var(--rose); border-color: var(--rose); }
+  button.danger { color: #fff; background: var(--danger); border-color: var(--danger); }
+  button.link {
+    display: inline-block; width: auto; min-height: 44px; padding: 8px 0; margin: -8px 0;
+    font-weight: 400; color: var(--rose); background: none; border: 0; text-decoration: underline;
+  }
+  button[disabled] { opacity: .5; cursor: not-allowed; }
+  a:focus-visible, button:focus-visible, input:focus-visible, [tabindex="-1"]:focus-visible {
+    outline: 3px solid var(--ink); outline-offset: 2px;
+  }
+  .divider { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 14px; margin: 6px 0 16px; }
+  .divider::before, .divider::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+  .error {
+    color: var(--danger); background: #fdf1f2; border: 1px solid #e6b7bd; border-radius: 12px;
+    padding: 12px 14px; margin: 0 0 16px;
+  }
+  .notice {
+    background: #fdf6e7; border: 1px solid #ecd9ad; border-radius: 12px;
+    padding: 12px 14px; margin: 0 0 16px;
+  }
+  .who { overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="eyebrow"><span class="dot"></span> Mirah</div>
+  <h1>Delete your account</h1>
+  <p class="sub">Mirah is an app by Made It Happen LLC. You can delete your Mirah account, and the data stored with it, in the app or from this page.</p>
+
+  <h2 id="subscriptions">First: deleting does not cancel a subscription</h2>
+  <p>A Mirah+ subscription is billed by Apple or Google, not by us. Deleting your account does <strong>not</strong> cancel it, and you would keep being charged. Cancel it first:</p>
+  <ul>
+    <li><strong>Google Play:</strong> open the Play Store app, tap your profile picture, then <strong>Payments &amp; subscriptions &rarr; Subscriptions &rarr; Mirah &rarr; Cancel subscription</strong>. On the web: <a href="https://play.google.com/store/account/subscriptions" rel="noopener noreferrer">play.google.com/store/account/subscriptions</a>.</li>
+    <li><strong>App Store:</strong> on your iPhone or iPad open <strong>Settings</strong>, tap your name, then <strong>Subscriptions &rarr; Mirah &rarr; Cancel Subscription</strong>. Apple&rsquo;s steps for every device: <a href="https://support.apple.com/118428" rel="noopener noreferrer">support.apple.com/118428</a>.</li>
+  </ul>
+  <p>Refunds are decided by Apple or Google. Deleting your account does not refund a subscription or unused Enhance credits.</p>
+
+  <h2>Delete in the app</h2>
+  <p>Open Mirah and go to <strong>Profile &rarr; Delete Account</strong>, then confirm. The account is deleted straight away.</p>
+  <p>If you never added an email address or an Apple or Google sign-in, your account is a guest account, and the app is the only place to delete it: the form and the email request below need a sign-in.</p>
+
+  <h2>Delete without the app</h2>
+  <p id="web-unavailable" class="notice" role="status" hidden>The online form could not load. Reload the page to try again, or send the request by email below.</p>
+
+  <section id="web-flow" class="card" aria-labelledby="flow-title" hidden>
+    <h3 id="flow-title" tabindex="-1">Sign in to the account you want to delete</h3>
+    <p id="flow-error" class="error" role="alert" hidden></p>
+
+    <div id="step-loading">
+      <p role="status">Checking whether you are signed in&hellip;</p>
+    </div>
+
+    <div id="step-signin" hidden>
+      <button type="button" id="google-button">Continue with Google</button>
+      <div class="divider" aria-hidden="true">or</div>
+      <form id="password-form" novalidate>
+        <label for="email-input">Email</label>
+        <input type="email" id="email-input" name="email" autocomplete="username" inputmode="email" autocapitalize="none" spellcheck="false" required>
+        <label for="password-input">Password</label>
+        <input type="password" id="password-input" name="password" autocomplete="current-password" required>
+        <button type="submit" id="password-button" class="primary">Sign in</button>
+      </form>
+      <p class="quiet">Signing in only proves the account is yours. Nothing is deleted until you confirm on the next step.</p>
+    </div>
+
+    <div id="step-confirm" hidden>
+      <p class="who">You are signed in as <strong id="who"></strong>.</p>
+      <p><button type="button" id="signout-button" class="link">Not this account? Sign out</button></p>
+      <p id="new-account-note" class="notice" hidden>This Google account had no Mirah account until a moment ago: signing in here created an empty one. If your Mirah account uses another sign-in, such as Sign in with Apple, deleting this one will not remove it. Delete the empty account below, then email us about the other one.</p>
+      <p>This permanently deletes your profile, your closet and its photos, your outfits and wear history, and any Enhance credits you have left. It cannot be undone, and it does not cancel a subscription.</p>
+      <form id="delete-form" novalidate>
+        <label for="confirm-input">Type DELETE to confirm</label>
+        <input type="text" id="confirm-input" name="confirm" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="confirm-help">
+        <p id="confirm-help" class="quiet">The button below unlocks once you have typed the word DELETE.</p>
+        <button type="submit" id="delete-button" class="danger" disabled>Permanently delete my account</button>
+      </form>
+      <p id="delete-progress" class="quiet" role="status" hidden>Deleting your account. This can take up to a minute; keep this page open.</p>
+    </div>
+
+    <div id="step-done" hidden>
+      <p>Your profile, closet, photos, outfits, wear history and credits have been removed, and you have been signed out on this page. You can close it now.</p>
+      <p>If you had a Mirah+ subscription, it is still active with Apple or Google until you cancel it. <a href="#subscriptions">How to cancel</a>.</p>
+    </div>
+  </section>
+
+  <section id="email-option" class="card" aria-labelledby="email-title">
+    <h3 id="email-title">Send us a deletion request by email</h3>
+    <p>Email us from the address on your Mirah account and we will delete the account for you. We reply within 2 business days.</p>
+    <p><a class="email" href="mailto:info@mirah.support?subject=Delete%20my%20Mirah%20account">info@mirah.support</a></p>
+    <p class="quiet">If you signed up with <strong>Sign in with Apple</strong>, the quickest way is the Mirah app on your iPhone or iPad (Profile &rarr; Delete Account). If you no longer have the app, email us and say that you used Sign in with Apple; if you chose &ldquo;Hide My Email&rdquo;, tell us so and we will confirm the account with you another way.</p>
+  </section>
+
+  <h2>What is deleted</h2>
+  <p>When you delete in the app or with the form on this page, deletion is immediate and permanent; any photo we could not remove straight away is removed automatically soon after. We cannot restore a deleted account.</p>
+  <ul>
+    <li><strong>Your sign-in:</strong> your email address and any linked Apple or Google sign-in.</li>
+    <li><strong>Your profile:</strong> your name, profile photo, style and modesty preferences, and your colour analysis results.</li>
+    <li><strong>Your closet:</strong> every piece, the photos and cut-outs of it, the images Studio made of it and the copies Studio keeps of them, and the details filled in for it.</li>
+    <li><strong>Your outfits:</strong> outfit suggestions, saved sets, and the wear history you logged.</li>
+    <li><strong>Your Enhance credits:</strong> the remaining balance and the record of how credits were granted and used.</li>
+    <li><strong>The rest of what is tied to your account:</strong> daily usage counts, saved AI answers for your photos, and any reports you sent about an AI result.</li>
+  </ul>
+
+  <h2>What is not deleted</h2>
+  <ul>
+    <li><strong>Your subscription.</strong> It keeps renewing until you cancel it with Apple or Google (<a href="#subscriptions">see above</a>).</li>
+    <li><strong>Purchase records.</strong> Apple or Google keeps its own record of what you bought. RevenueCat, the service we use to track subscriptions, keeps your purchase history under a random account ID, with no name, email address or photos. Email us if you want that record removed as well.</li>
+    <li><strong>Usage statistics and crash reports.</strong> They carry a code made on your phone by scrambling your account ID or, in iPhone version 1.6 and earlier, a scrambled device identifier; on Android, some carry an identifier for the app&rsquo;s installation instead. They never carry your account ID itself, your name or your email. They are kept by the services that collect them (TelemetryDeck on iPhone and iPad; Google Firebase Analytics, Crashlytics and Performance Monitoring on Android, including crash reports) until they expire on those services&rsquo; schedules, and are not deleted with your account.</li>
+    <li><strong>A record of the deletion:</strong> your account ID and when the account was deleted, which we keep to make sure nothing is left behind.</li>
+    <li><strong>Emails you sent us</strong>, which stay in our support mailbox.</li>
+    <li><strong>Short-lived copies.</strong> Routine server logs and database backups kept by our hosting provider expire on their own schedule. The AI providers that processed your photos or outfit requests keep them only for the limited time described in our <a href="privacy.html">Privacy Policy</a>.</li>
+  </ul>
+
+  <div class="footer">
+    &copy; 2026 Made It Happen LLC &middot; <a href="index.html">Home</a> &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  // SUPABASE_ANON_KEY is the publishable key the apps ship with, never a
+  // service-role or secret key: this file is public. With a missing value or a
+  // secret key the page shows the email option only.
+  var SUPABASE_URL = "https://renwnpztopwnpqxurafr.supabase.co";
+  var SUPABASE_ANON_KEY = "sb_publishable_j2-VyMHY0Ior7TkQeP7gYA_Mrnh6B9_";
+
+  SUPABASE_URL = SUPABASE_URL.replace(/\/+$/, "");
+
+  // supabase-js, pinned and integrity-checked. To upgrade, change the version
+  // and recompute the hash:
+  //   curl -s <url> | openssl dgst -sha384 -binary | base64
+  var SUPABASE_JS_URL = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js";
+  var SUPABASE_JS_INTEGRITY = "sha384-Rj26LVGvoeRVR6+mwQmFfcR3QOBEwT+ZmuCWpuiqeTzJpCs0ER4ITAWGb4Hiy3Ok";
+
+  // A Google account this young was created by the Google sign-in on this page.
+  var NEW_ACCOUNT_WINDOW_MS = 5 * 60 * 1000;
+
+  var el = function (id) { return document.getElementById(id); };
+  var client = null;
+  var session = null;
+  var busy = false;
+
+  function isConfigured() {
+    var urlOK = /^https:\/\/[a-z0-9.-]+$/i.test(SUPABASE_URL) ||
+      /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(SUPABASE_URL);
+    var keyOK = SUPABASE_ANON_KEY.length >= 20 && SUPABASE_ANON_KEY.indexOf("REPLACE_") !== 0;
+    return urlOK && keyOK && !isSecretKey(SUPABASE_ANON_KEY);
+  }
+
+  // A service-role key pasted here by mistake would be public the moment the
+  // page is. Refuse to run with one so the mistake shows up in the first test.
+  function isSecretKey(key) {
+    if (key.indexOf("sb_secret_") === 0) return true;
+    var parts = key.split(".");
+    if (parts.length !== 3) return false;
+    try {
+      var payload = JSON.parse(atob(parts[1].replace(/-/g, "+").replace(/_/g, "/")));
+      return payload.role === "service_role";
+    } catch (_error) {
+      return false;
+    }
+  }
+
+  // ---- Rendering -----------------------------------------------------------
+
+  var STEPS = ["loading", "signin", "confirm", "done"];
+  var TITLES = {
+    loading: "Sign in to the account you want to delete",
+    signin: "Sign in to the account you want to delete",
+    confirm: "Confirm the deletion",
+    done: "Your account has been deleted"
+  };
+
+  function showStep(step, options) {
+    STEPS.forEach(function (name) { el("step-" + name).hidden = name !== step; });
+    el("flow-title").textContent = TITLES[step];
+    if (!options || !options.keepError) clearError();
+    if (!options || options.focus !== false) el("flow-title").focus();
+  }
+
+  function showError(message) {
+    var box = el("flow-error");
+    box.textContent = message;
+    box.hidden = false;
+  }
+
+  function clearError() {
+    var box = el("flow-error");
+    box.textContent = "";
+    box.hidden = true;
+  }
+
+  function setBusy(isBusy) {
+    busy = isBusy;
+    el("google-button").disabled = isBusy;
+    el("password-button").disabled = isBusy;
+    el("signout-button").disabled = isBusy;
+    el("confirm-input").readOnly = isBusy;
+    updateDeleteButton();
+  }
+
+  function confirmationTyped() {
+    return el("confirm-input").value.trim().toUpperCase() === "DELETE";
+  }
+
+  function updateDeleteButton() {
+    el("delete-button").disabled = busy || !confirmationTyped();
+  }
+
+  function showUnavailable() {
+    el("web-flow").hidden = true;
+    el("web-unavailable").hidden = false;
+  }
+
+  function showSignIn(message) {
+    session = null;
+    el("password-input").value = "";
+    showStep("signin", { focus: false });
+    if (message) showError(message);
+  }
+
+  function showConfirm(newSession) {
+    session = newSession;
+    var user = newSession.user || {};
+    el("who").textContent = user.email || "your Mirah account";
+    var createdAt = Date.parse(user.created_at || "");
+    var viaGoogle = !!user.app_metadata && user.app_metadata.provider === "google";
+    el("new-account-note").hidden = !(viaGoogle && createdAt && Date.now() - createdAt < NEW_ACCOUNT_WINDOW_MS);
+    el("confirm-input").value = "";
+    el("password-input").value = "";
+    el("delete-progress").hidden = true;
+    updateDeleteButton();
+    showStep("confirm");
+  }
+
+  // ---- Sign-in --------------------------------------------------------------
+
+  function signInMessage(error) {
+    var code = error && (error.code || "");
+    var status = error && error.status;
+    if (code === "invalid_credentials" || /invalid login credentials/i.test(error.message || "")) {
+      return "That email and password do not match a Mirah account. If you signed up with Google or Apple you have no Mirah password: use the Google button, or the email option below.";
+    }
+    if (code === "email_not_confirmed") {
+      return "This email address has not been confirmed yet. Open the confirmation email we sent you, or use the email option below.";
+    }
+    if (status === 429 || code === "over_request_rate_limit") {
+      return "Too many attempts. Wait a minute and try again.";
+    }
+    if (!status) {
+      return "We could not reach the server. Check your connection and try again.";
+    }
+    return "Sign-in did not work. Try again, or use the email option below.";
+  }
+
+  function onPasswordSubmit(event) {
+    event.preventDefault();
+    if (busy) return;
+    var email = el("email-input").value.trim();
+    var password = el("password-input").value;
+    if (!email || !password) {
+      showError("Enter your email address and your password.");
+      (email ? el("password-input") : el("email-input")).focus();
+      return;
+    }
+    clearError();
+    setBusy(true);
+    el("password-button").textContent = "Signing in…";
+    client.auth.signInWithPassword({ email: email, password: password }).then(function (result) {
+      if (result.error || !result.data || !result.data.session) {
+        showError(signInMessage(result.error || {}));
+        return;
+      }
+      showConfirm(result.data.session);
+    }).catch(function () {
+      showError(signInMessage({}));
+    }).then(function () {
+      el("password-button").textContent = "Sign in";
+      setBusy(false);
+    });
+  }
+
+  function onGoogleClick() {
+    if (busy) return;
+    clearError();
+    setBusy(true);
+    client.auth.signInWithOAuth({
+      provider: "google",
+      // Always the .html URL: it is the one on the Auth redirect allowlist, and
+      // GitHub Pages also serves this page without the extension.
+      options: { redirectTo: window.location.origin + window.location.pathname.replace(/\/delete-account$/, "/delete-account.html") }
+    }).then(function (result) {
+      // On success the browser is already leaving for Google.
+      if (result.error) {
+        setBusy(false);
+        showError("Google sign-in could not start. Try again, or use the email option below.");
+      }
+    }).catch(function () {
+      setBusy(false);
+      showError("Google sign-in could not start. Try again, or use the email option below.");
+    });
+  }
+
+  function forgetSession() {
+    // scope "local": drop this page's copy only. The account may already be
+    // gone, in which case a server-side sign-out would just fail.
+    var done = function () {
+      try {
+        for (var i = window.sessionStorage.length - 1; i >= 0; i--) {
+          var key = window.sessionStorage.key(i);
+          if (key && key.indexOf("sb-") === 0) window.sessionStorage.removeItem(key);
+        }
+      } catch (_error) { /* storage unavailable: nothing was kept */ }
+    };
+    return client.auth.signOut({ scope: "local" }).then(done, done);
+  }
+
+  function onSignOutClick() {
+    if (busy) return;
+    setBusy(true);
+    forgetSession().then(function () {
+      setBusy(false);
+      showSignIn();
+      el("flow-title").focus();
+    });
+  }
+
+  // ---- Deletion -------------------------------------------------------------
+
+  function onDeleteSubmit(event) {
+    event.preventDefault();
+    if (busy) return;
+    if (!confirmationTyped()) {
+      showError("Type the word DELETE in the box to confirm.");
+      el("confirm-input").focus();
+      return;
+    }
+    clearError();
+    setBusy(true);
+    el("delete-button").textContent = "Deleting…";
+    el("delete-progress").hidden = false;
+
+    // getSession() refreshes an expired token before we use it.
+    client.auth.getSession().then(function (result) {
+      var current = result.data && result.data.session;
+      if (!current) return { expired: true };
+      return fetch(SUPABASE_URL + "/functions/v1/delete-account", {
+        method: "POST",
+        headers: { "Authorization": "Bearer " + current.access_token, "apikey": SUPABASE_ANON_KEY }
+      }).then(function (response) {
+        return response.json().catch(function () { return {}; }).then(function (body) {
+          return { status: response.status, body: body };
+        });
+      });
+    }).then(function (outcome) {
+      if (outcome.status === 200 && outcome.body && outcome.body.ok === true) {
+        return forgetSession().then(function () {
+          session = null;
+          finishDelete();
+          // Nothing left to do: end on the confirmation alone.
+          el("email-option").hidden = true;
+          showStep("done");
+        });
+      }
+      if (outcome.expired || outcome.status === 401) {
+        return forgetSession().then(function () {
+          finishDelete();
+          showSignIn("Your sign-in is no longer valid, so nothing was deleted just now. Sign in again to continue. If you had already confirmed a deletion a moment ago, the account may already be gone.");
+          el("flow-title").focus();
+        });
+      }
+      finishDelete();
+      if (outcome.body && outcome.body.error === "deletion_failed") {
+        showError("The deletion did not finish, and some of your photos may already have been removed. Try again. If it keeps failing, use the email option below and we will finish it for you.");
+      } else {
+        showError("Something went wrong, so we do not know whether the deletion went through. Try again. If it keeps failing, use the email option below.");
+      }
+      el("delete-button").focus();
+    }).catch(function () {
+      finishDelete();
+      showError("We could not reach the server, so we do not know whether the deletion went through. Check your connection and try again.");
+      el("delete-button").focus();
+    });
+  }
+
+  function finishDelete() {
+    el("delete-button").textContent = "Permanently delete my account";
+    el("delete-progress").hidden = true;
+    setBusy(false);
+  }
+
+  // ---- Start ----------------------------------------------------------------
+
+  // Supabase sends a failed OAuth round trip back with error parameters in the
+  // query string or the fragment.
+  function oauthReturn() {
+    var query = new URLSearchParams(window.location.search);
+    var fragment = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+    return {
+      failed: query.has("error") || fragment.has("error") || query.has("error_description") || fragment.has("error_description"),
+      hasCode: query.has("code")
+    };
+  }
+
+  function start() {
+    if (!window.supabase || typeof window.supabase.createClient !== "function") {
+      showUnavailable();
+      return;
+    }
+    var returned = oauthReturn();
+    try {
+      client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+        auth: {
+          flowType: "pkce",
+          // The tab's own storage: the sign-in is forgotten when the tab closes.
+          storage: window.sessionStorage,
+          persistSession: true,
+          autoRefreshToken: true,
+          detectSessionInUrl: true
+        }
+      });
+    } catch (_error) {
+      showUnavailable();
+      return;
+    }
+
+    el("password-form").addEventListener("submit", onPasswordSubmit);
+    el("google-button").addEventListener("click", onGoogleClick);
+    el("signout-button").addEventListener("click", onSignOutClick);
+    el("delete-form").addEventListener("submit", onDeleteSubmit);
+    el("confirm-input").addEventListener("input", updateDeleteButton);
+
+    // A page restored from the back/forward cache (Back from Google's screen)
+    // would otherwise come back with its buttons still disabled.
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) setBusy(false);
+    });
+
+    el("email-title").textContent = "Cannot sign in? Email us instead";
+    el("web-flow").hidden = false;
+
+    // getSession() waits for supabase-js to finish reading a returning OAuth
+    // redirect, so one call covers both a fresh visit and the way back from Google.
+    client.auth.getSession().then(function (result) {
+      var existing = result.data && result.data.session;
+      if (returned.failed || returned.hasCode) {
+        // Drop the one-time parameters so a reload does not replay them.
+        window.history.replaceState(null, "", window.location.pathname);
+      }
+      if (existing) {
+        showConfirm(existing);
+      } else if (returned.failed || returned.hasCode) {
+        showStep("signin", { focus: false });
+        showError("Google sign-in did not complete. Try again, or sign in with your email and password.");
+      } else {
+        showStep("signin", { focus: false });
+      }
+    }).catch(function () {
+      showUnavailable();
+    });
+  }
+
+  if (!isConfigured()) {
+    if (window.console && console.info) {
+      console.info("delete-account.html: SUPABASE_URL / SUPABASE_ANON_KEY are not set (or the key is a secret key); showing the email instructions only.");
+    }
+    return;
+  }
+
+  var script = document.createElement("script");
+  script.src = SUPABASE_JS_URL;
+  script.integrity = SUPABASE_JS_INTEGRITY;
+  script.crossOrigin = "anonymous";
+  script.onload = start;
+  script.onerror = showUnavailable;
+  document.head.appendChild(script);
+})();
+</script>
+</body>
+</html>
